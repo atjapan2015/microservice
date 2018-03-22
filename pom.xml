@@ -28,6 +28,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId> <!-- 整个项目会自动引入tomcat和spring-webmvc等相关包，以支持全栈的开发。 -->
+			<!-- 不需要指定该依赖的版本，因为已经在spring-boot-starter-parent中对version进行了指定。 -->
 		</dependency>
 
 		<dependency>
@@ -46,7 +47,7 @@
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
+				<artifactId>spring-boot-maven-plugin</artifactId> <!-- 该插件会对Maven生成的jar包进行第二次打包，打成一个fat-jar包之后,我们可以直接使用"java -jar xxx.jar“来运行服务。 -->
 			</plugin>
 		</plugins>
 	</build>
