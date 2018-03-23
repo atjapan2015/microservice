@@ -30,6 +30,11 @@
 			<artifactId>spring-boot-starter-web</artifactId> <!-- 整个项目会自动引入tomcat和spring-webmvc等相关包，以支持全栈的开发。 -->
 			<!-- 不需要指定该依赖的版本，因为已经在spring-boot-starter-parent中对version进行了指定。 -->
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId> <!-- 使用Actuator功能。 -->
+			<!-- http://localhost:8802/application/health -->
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
